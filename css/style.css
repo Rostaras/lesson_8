@@ -1,0 +1,310 @@
+body {
+  font-family: "Lato";
+  color: #424551;
+  line-height: 160%;
+}
+.header {
+  background-image: linear-gradient(55.95deg, #ff403a38 0%, #f75e053b 100%);
+  margin-bottom: 120px;
+}
+.header__title {
+  color: #ff3f3a;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.header__title-two {
+  color: #1e212c;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+}
+.main {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.title__two {
+  color: #1e212c;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+.title__three {
+  color: #1e212c;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+.title__six {
+  color: #1e212c;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.text__content-one {
+  margin-bottom: 48px;
+}
+.text__content-two {
+  font-size: 20px;
+  line-height: 150%;
+  color: #787a80;
+  margin-bottom: 24px;
+}
+.list__block {
+  margin-bottom: 200px;
+}
+
+.list__content-one li:not(:last-child) {
+  margin-bottom: 4px;
+}
+.list__content-one li {
+  padding-left: 32px;
+  background: url(../img/icons/check.png) 0 6px no-repeat;
+}
+.list__content-two {
+  font-weight: 700;
+  line-height: 160%;
+  margin-bottom: 32px;
+}
+
+.list__content-two li:not(:last-child) {
+  margin-bottom: 4px;
+}
+.list__content-two li:first-child::before {
+  background: url(../img/icons/Star.png) 0 0px no-repeat;
+}
+.list__content-two li:nth-child(2)::before {
+  background: url(../img/icons/Play.png) 0 0px no-repeat;
+}
+.list__content-two li:last-child::before {
+  background: url(../img/icons/Profile.png) 0 0px no-repeat;
+}
+.list__content-two li::before {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: -2px;
+  content: "";
+}
+
+.houmwork__block {
+  background-color: #7a956b;
+  color: #fff;
+  padding: 15px;
+}
+
+.block__hover:hover .block__class-one {
+  visibility: visible;
+  opacity: 1;
+}
+.block__class-one {
+  opacity: 0;
+  visibility: hidden;
+}
+.block__class-one:hover {
+  color: blue;
+}
+.block__class-two:active {
+  color: red;
+}
+.block__class-three:visited {
+  color: green;
+}
+.block__class-four:focus {
+  outline: 1px solid red;
+  color: #1e212c;
+}
+
+.block__class-five {
+  display: none;
+}
+.block__class-five:target {
+  color: aqua;
+  display: block;
+}
+.block__class-six p:not(:last-child) {
+  color: darkblue;
+}
+.block__class-six p:first-of-type {
+  text-transform: uppercase;
+}
+.footer__block {
+  margin-left: 500px;
+}
+ol li::after {
+  content: "+'+";
+  color: hotpink;
+}
+
+ol {
+  margin: 30px;
+  counter-reset: item;
+}
+.footer__content li::before {
+  counter-increment: item;
+  content: counter(item) ".";
+  display: inline-block;
+  margin-right: 15px;
+  color: orange;
+}
+.game {
+  padding: 0 15px;
+}
+.game__container {
+  width: 1200px;
+  height: 600px;
+  background: url(../img/space.jpg) center no-repeat;
+}
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.game__box {
+  height: 100%;
+  padding: 70px 20px 0 20px;
+}
+
+.stage__box {
+  font-size: 0;
+  background: url(../img/mist.png) 0 0 / auto 100% repeat;
+  opacity: 0;
+  visibility: hidden;
+  height: 80px;
+  width: 100%;
+  text-align: right;
+}
+.stage__box::after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: -80px;
+  pointer-events: none;
+  background: url(../img/mars.png) 0 0 / auto 100% no-repeat,
+    url(../img/mist.png) 0 0 / auto 100% repeat;
+}
+.stage__box .stage__items {
+  overflow: hidden;
+  height: 80px;
+  text-align-last: left;
+  padding-right: 60px;
+}
+.stage__box:hover {
+  opacity: 1;
+  visibility: visible;
+}
+.game__start {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: -80px;
+  background: url(../img/earth.png) 0 0 / auto 100% no-repeat;
+}
+.game__start:hover ~ .stage__box {
+  opacity: 1;
+  visibility: visible;
+}
+.stage__box .stage__item {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+}
+.stage__item:hover {
+  opacity: 1;
+}
+.stage__item img {
+  width: 100%;
+}
+.game-item-1::after {
+  background: url(../img/rocket.png) 50% / 100% no-repeat;
+}
+
+.stage__item::after {
+  margin-top: 0px;
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+}
+
+/* ===== */
+
+.game__start-2 {
+  width: 80px;
+  height: 80px;
+  margin: 0 0 0 auto;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+.stage__box-2 {
+  width: 80px;
+  height: 300px;
+  opacity: 0;
+  visibility: hidden;
+  background: url(../img/mist.png) 0 0 / 100% repeat;
+}
+.game__start-2:hover .stage__box-2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.stage__box-2 .stage__item {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0 7px;
+}
+.stage__box-2 .stage__item::after {
+  width: 80px;
+  height: 80px;
+}
+.stage__box-2 .stage__items {
+  text-align: center;
+  width: 80px;
+  height: 280px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.stage__box-2 .game-item-1::after {
+  background: url(../img/rocket2.png) 50% / 100% no-repeat;
+}
+
+/*-----*/
+.game__start-3 {
+  width: 110px;
+  height: 110px;
+  background: url(../img/Saturn.png) center / 100% no-repeat;
+}
+.stage__box-3 {
+  background: url(../img/mist.png) 0 0 / auto 100% repeat;
+  height: 80px;
+  width: 500px;
+  margin-left: -500px;
+  opacity: 0;
+  visibility: hidden;
+}
+.stage__box-3 .stage__items {
+  height: 80px;
+  width: 500px;
+  overflow: hidden;
+}
+.stage__box-3 .stage__items {
+  height: 80px;
+  width: 80px;
+}
